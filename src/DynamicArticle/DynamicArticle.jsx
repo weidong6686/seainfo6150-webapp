@@ -5,7 +5,16 @@ const DynamicArticle = (props) => {
   return (
     <article>
       {/* this is an example of how you insert props into a react component */}
-      <div>{props.article.title}</div>
+      <header>
+        <h1>{props.article.title}</h1>
+        <address>
+          by {props.article.author} (
+          <a href={'mailto:'+props.article.authorEmail}>{props.article.authorEmail}</a>)
+          <br />
+        </address>
+        <time datetime={props.article.timeStamp}> {props.article.displayDate} </time>
+      </header>
+      
       <HTMLText text={props.article.text} />
     </article>
   );
