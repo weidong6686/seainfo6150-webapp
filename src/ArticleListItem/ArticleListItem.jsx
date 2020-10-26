@@ -1,15 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
+import ArticleTextToggleButton from "../ArticleTextToggleButton/ArticleTextToggleButton.jsx"
+import styles from "./ArticleListItem.module.css"
 
 const ArticleListItem = (props) => {
   return (
-    <li>
+    <li className={styles.item}>
       <article>
-        <h2>{props.article.title}</h2>
-        <time dateTime={props.article.timeStamp}>
-          {props.article.displayDate}
-        </time>
-        <p>{props.article.shortText}</p>
+        <h2 className={styles.title}>{props.article.title}</h2>
+        <ArticleTextToggleButton article={props.article}></ArticleTextToggleButton>
       </article>
     </li>
   );
