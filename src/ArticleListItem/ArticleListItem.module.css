@@ -17,3 +17,11 @@
 .title {
     color: #cc0000;
 }
+
+.content {
+    margin-bottom: 20px;
+}
+
+.time{
+    font-weight: bold;
+}
