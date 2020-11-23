@@ -1,0 +1,11 @@
+.image{
+    width: 50%;
+    height: 100%;
+    box-shadow: 5px 10px 8px #888888;
+    border-radius: 50%;
+    border: 7px solid #c00;;
+} 
+.image_body{
+    width: fit-content;
+    margin-bottom: 8%;
+}
